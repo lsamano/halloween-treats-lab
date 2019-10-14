@@ -3,8 +3,6 @@ class CreateCandies < ActiveRecord::Migration[5.2]
     create_table :candies do |t|
       t.integer :house_id
       t.string :name
-
-      t.timestamps
     end
     add_index :candies, :house_id
   end

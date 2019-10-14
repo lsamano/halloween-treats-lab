@@ -18,8 +18,6 @@ ActiveRecord::Schema.define(version: 2019_10_14_153654) do
   create_table "candies", force: :cascade do |t|
     t.integer "house_id"
     t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.index ["house_id"], name: "index_candies_on_house_id"
   end
 

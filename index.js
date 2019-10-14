@@ -27,6 +27,7 @@ const showHouse = house => {
         <img src='${house.house_img}'/>
         <img src='${house.owner_img}'/>
         <blockquote>"${house.greeting}"</blockquote>
+        <p>Candies Left: <span id='candy-left'>${house.candies.length}</span></p>
         <button id='back-button'>Go Back</button>
         <button id='candy-button'>Ask for Candy!</button>
     `
@@ -37,6 +38,22 @@ const showHouse = house => {
     })
     const candyButton = document.getElementById('candy-button')
     candyButton.addEventListener('click', event => {
-
+        candyButton.disabled = true
+        // debugger
+        if (house.candies.length > 0) {
+            const candyId = house.candies[0].id
+            fetch(`http://localhost:3000/candies/${candyId}`, {
+                method: "DELETE",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            })
+            .then(res => res.json())
+            .then(updatedHouse => {
+                const candyLeft = document.getElementById('candy-left')
+                candyLeft.innerText = updatedHouse.candies.length
+            })
+        }
     })
 }
