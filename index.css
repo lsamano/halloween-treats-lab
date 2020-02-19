@@ -1,0 +1,60 @@
+body {
+  max-width: none;
+  margin: auto;
+  padding: inherit;
+  height: 100vh;
+  width: 100vw;
+}
+
+.my-container {
+  display: flex;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+#left-column {
+  width: 20%;
+  background-color: #204060;
+}
+
+#right-column {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+#street {
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+.house {
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

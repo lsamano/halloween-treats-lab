@@ -26,14 +26,22 @@ data = [
 
 data.each { |object| House.create(object) }
 
+# name_array = [
+#   "chocolate", "taffy", "lollipop", "gummy bears", "gummy worms", "minty-fresh gum", "candy corn"
+# ]
+
+image_array = [
+  "https://cdn2.iconfinder.com/data/icons/free-color-halloween-icons/24/Toilet-Paper-512.png",
+  "https://cdn2.iconfinder.com/data/icons/free-color-halloween-icons/24/Candy-Corn-512.png",
+  "https://cdn2.iconfinder.com/data/icons/free-color-halloween-icons/24/Candy-02-512.png",
+  "https://cdn2.iconfinder.com/data/icons/free-color-halloween-icons/24/Candy-01-512.png",
+  
+]
+
 House.all.each { |house|
-    house.candies.create(name: "chocolate")
-    house.candies.create(name: "taffy")
-    house.candies.create(name: "lollipop")
-    house.candies.create(name: "gummy bears")
-    house.candies.create(name: "gummy worms")
-    house.candies.create(name: "minty-fresh gum")
-    house.candies.create(name: "candy corn")
+    7.times do
+      house.candies.create(name: name_array.sample)
+    end
 }
 
 puts "Done."

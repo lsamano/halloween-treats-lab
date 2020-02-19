@@ -23,3 +23,4 @@ rails s
     - If there is no more candy left, instead of the button, render the line `"Sorry, I'm out of candy!"`
     - A "Go Back" button to see all of the houses again.
 4. Clicking on the button will DELETE one of the candy instances associated with the house from your database.
+    - *After the candy is successfully deleted*, show the name of the deleted candy in the `#my-candy` ul. Note that this means *info from something deleted is being displayed*, and therefore it will disappear on page reload. 
