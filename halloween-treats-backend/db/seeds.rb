@@ -23,7 +23,7 @@ data = [
     "greeting": "Ho ho ho."
   },
   {
-    "house_img": "https://cdn0.iconfinder.com/data/icons/free-any-house/96/house_of_love-home-256.png",
+    "house_img": "https://cdn0.iconfinder.com/data/icons/free-any-house/96/dog_house-home-256.png",
     "owner_img": "https://cdn3.iconfinder.com/data/icons/materia-flat-halloween-free/24/039_026_cat_black_witch_halloween-256.png",
     "greeting": "Purrrr. (Hello there, human.)"
   },

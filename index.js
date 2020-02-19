@@ -66,7 +66,7 @@ const showHouse = house => {
                 const myCandy = document.getElementById('my-candy')
                 const newCandyLi = document.createElement('div')
                 newCandyLi.innerHTML = `<img src="${candy.image_url}" class="hoverable candy-img"/>`
-                myCandy.append(newCandyLi)
+                myCandy.prepend(newCandyLi)
             })
         }
     })
