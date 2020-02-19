@@ -1,10 +1,6 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+House.destroy_all
+Candy.destroy_all
+
 data = [
     {
         "house_img": "https://cdn0.iconfinder.com/data/icons/free-any-house/96/small_house-home-256.png",
@@ -30,9 +26,14 @@ data = [
 
 data.each { |object| House.create(object) }
 
-House.all.each { |house| 
-    house.candies << Candy.create(name: "chocolate")
-    house.candies << Candy.create(name: "taffy")
+House.all.each { |house|
+    house.candies.create(name: "chocolate")
+    house.candies.create(name: "taffy")
+    house.candies.create(name: "lollipop")
+    house.candies.create(name: "gummy bears")
+    house.candies.create(name: "gummy worms")
+    house.candies.create(name: "minty-fresh gum")
+    house.candies.create(name: "candy corn")
 }
 
 puts "Done."
