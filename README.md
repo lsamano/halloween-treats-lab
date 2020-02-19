@@ -13,8 +13,8 @@ rails s
 ```
 
 # Deliverables
-## Read (Index)
-1. On page load, images of the houses should appear on the street, in the `#main-container` div.
+## 1. Read (Index)
+On page load, images of the houses should appear on the street, in the `#main-container` div.
   - Fetch from `http://localhost:3000/houses`, it will return an array of objects.
   - Each object has the following example data:
     ```json
@@ -26,20 +26,20 @@ rails s
     ```
   - Give each house image a class of `hoverable` to add some CSS hover animation to it.
 
-## Read (Show)
-2. When I click on a house image, the house's show page should appear in the `#main-container` div, **replacing** the houses.
-3. The house show page should include the following:
+## 2. Read (Show)
+When I click on a house image, the house's show page should appear in the `#main-container` div, **replacing** the houses.
+The house show page should include the following:
     - An image of the house
     - An image of the house's owner
     - The owner's greeting
     - How much candy the house has left
       - If there is no more candy left, render the line `"Sorry, I'm out of candy!"`
-4. The house show page should also have two buttons:
+The house show page should also have two buttons:
     - A button to ask for candy
       - If there is no more candy left, disable the button
     - A "Go Back" button to see all of the houses again.
 
-## Delete
-5. Clicking on the button will DELETE one of the candy instances associated with the house from your database.
+## 3. Delete
+Clicking on the button will DELETE one of the candy instances associated with the house from your database.
     - *After the candy is successfully deleted*, update the number of candies left and show the image of the deleted candy in the `#my-candy` div. Note that this means *info from something deleted is being displayed*, and therefore it will disappear on page reload.
     - If you run out of candies, run `rails db:seed` in the `halloween-treats-backend` directory.
