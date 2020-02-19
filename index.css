@@ -15,6 +15,11 @@ body {
 #left-column {
   width: 20%;
   background-color: #204060;
+  overflow: scroll;
+}
+
+#my-candy {
+  list-style: none;
 }
 
 #right-column {
@@ -37,6 +42,11 @@ body {
 	animation-timing-function: ease-in;
 	animation-duration: 0.5s;
 }
+
+.hoverable:hover {
+  position: relative;
+  top: -5px;
+           }
 
 @keyframes slidein {
   from {

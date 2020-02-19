@@ -35,12 +35,12 @@ image_array = [
   "https://cdn2.iconfinder.com/data/icons/free-color-halloween-icons/24/Candy-Corn-512.png",
   "https://cdn2.iconfinder.com/data/icons/free-color-halloween-icons/24/Candy-02-512.png",
   "https://cdn2.iconfinder.com/data/icons/free-color-halloween-icons/24/Candy-01-512.png",
-  
+
 ]
 
 House.all.each { |house|
     7.times do
-      house.candies.create(name: name_array.sample)
+      house.candies.create(image_url: image_array.sample)
     end
 }
 

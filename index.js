@@ -19,6 +19,7 @@ const createHouseDiv = house => {
     // make img
     const houseImg = document.createElement('img')
     houseImg.src = house.house_img
+    houseImg.className = "hoverable"
 
     // attach click event handler
     houseImg.addEventListener('click', event => showHouse(house))
@@ -64,7 +65,7 @@ const showHouse = house => {
                 candyLeft.innerText = updatedHouse.candies.length || "Sorry, I'm out of candy!"
                 const myCandy = document.getElementById('my-candy')
                 const newCandyLi = document.createElement('li')
-                newCandyLi.innerText = candy.name
+                newCandyLi.innerHTML = `<img src="${candy.image_url}" class="hoverable"/>`
                 myCandy.append(newCandyLi)
             })
         }
