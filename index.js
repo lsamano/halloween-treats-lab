@@ -64,8 +64,8 @@ const showHouse = house => {
                 const candyLeft = document.getElementById('candy-left')
                 candyLeft.innerText = updatedHouse.candies.length || "Sorry, I'm out of candy!"
                 const myCandy = document.getElementById('my-candy')
-                const newCandyLi = document.createElement('li')
-                newCandyLi.innerHTML = `<img src="${candy.image_url}" class="hoverable"/>`
+                const newCandyLi = document.createElement('div')
+                newCandyLi.innerHTML = `<img src="${candy.image_url}" class="hoverable candy-img"/>`
                 myCandy.append(newCandyLi)
             })
         }

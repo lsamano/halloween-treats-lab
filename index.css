@@ -9,23 +9,22 @@ body {
 .my-container {
   display: flex;
   height: 100%;
-  /* overflow: hidden; */
 }
 
 #left-column {
-  width: 20%;
+  padding: 20px;
   background-color: #204060;
   overflow: scroll;
-}
-
-#my-candy {
-  list-style: none;
+  text-align: center;
+  flex: 0 0 150px;
 }
 
 #right-column {
   flex-grow: 1;
   padding: 20px;
   text-align: center;
+  max-width: 100%;
+  padding-top: 10%;
 }
 
 #street {
@@ -43,10 +42,19 @@ body {
 	animation-duration: 0.5s;
 }
 
+.hoverable {
+  padding: 10px;
+}
+
+.candy-img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
 .hoverable:hover {
   position: relative;
   top: -5px;
-           }
+}
 
 @keyframes slidein {
   from {
