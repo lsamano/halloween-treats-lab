@@ -28,7 +28,7 @@ A candy belongs to a house.
         "house_img": "https://cdn0.iconfinder.com/data/icons/free-any-house/96/huge_front_view_house_with_windows-home-256.png",
         "owner_img": "https://cdn3.iconfinder.com/data/icons/materia-flat-halloween-free/24/039_017_mummy_halloween_bandages_deceased-512.png",
         "greeting": "Salutations.",
-        "candies": [{...}, {...}, {...}]
+        "candies": [{}, {}, {}]
       }
       ```
       **NOTE: The `candies` key leads to an array of candy instances which the house owns.**
