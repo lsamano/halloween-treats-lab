@@ -23,17 +23,17 @@ A candy belongs to a house.
   - Fetch from `"http://localhost:3000/houses"`, which will return an array of objects.
   - Render the image of each house into the `#right-column` div.
     - Each house object has the following example data:
-      ```json
+      ```
       {
         "house_img": "https://cdn0.iconfinder.com/data/icons/free-any-house/96/huge_front_view_house_with_windows-home-256.png",
         "owner_img": "https://cdn3.iconfinder.com/data/icons/materia-flat-halloween-free/24/039_017_mummy_halloween_bandages_deceased-512.png",
         "greeting": "Salutations.",
-        "candies": [{}, {}, {}]
+        "candies": [{...}, {...}, {...}]
       }
       ```
       **NOTE: The `candies` key leads to an array of candy instances which the house owns.**
   - BONUS CSS:
-    - Wrap a div around all the house images, git it a class of `street` to add a fade-in effect to the houses on page load.
+    - Wrap a div around all the house images and give it a class of `street` to add a fade-in effect to the houses on page load.
     - Give each house image a class of `hoverable` to add hover animation to it.
 
 ## Read (Show)
