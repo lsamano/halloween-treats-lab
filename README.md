@@ -18,6 +18,7 @@ A house has many candies.
 A candy belongs to a house.
 
 # Deliverables
+![](index-example.gif)
 ## Read (Index)
 1. On page load, images of the houses should appear in the `#right-column` div.
   - Fetch from `"http://localhost:3000/houses"`, which will return an array of objects.
@@ -36,6 +37,7 @@ A candy belongs to a house.
     - Wrap a div around all the house images, git it a class of `street` to add a fade-in effect to the houses on page load.
     - Give each house image a class of `hoverable` to add hover animation to it.
 
+![](show-example.gif)
 ## Read (Show)
 2. When I click on a house image, the house's show page should appear in the `#right-column` div, **replacing** all the houses.
 3. The house show page should include the following:
