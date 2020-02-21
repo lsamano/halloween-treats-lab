@@ -47,7 +47,7 @@ There is a `House` model and a `Candy` model. A house has many candies. A candy 
     - BONUS CSS:
         - Wrap your show page in a div with a class of `house` for a nice fade-in CSS animation.
 4. The house show page should also have two buttons:
-    - A "Go Back" button to see all of the houses again. As in, replace the show page with the houses
+    - A "Go Back" button to see all of the houses again. As in, replace the show page with all the houses
     - A button to ask for candy
       - BONUS: If there is no more candy left, disable the button
 
@@ -59,8 +59,8 @@ There is a `House` model and a `Candy` model. A house has many candies. A candy 
   - If you run out of candies, run `rails db:seed` in the `halloween-treats-backend` directory.
 6. *After the candy is successfully deleted*, update the DOM with the following:
   - Update the number of candies left.
-  - Disable the candy-giving button after deletion.
   - Show the image of the deleted candy in the `#my-candy` div.
-    - Note that this means *info from something deleted is being displayed*, and therefore it will disappear on page reload.
+    - Note that this means *info from something deleted from the database is being displayed*. It will disappear on page reload.
+  - BONUS: Disable the candy-giving button after deletion.
   - BONUS CSS:
     - Give the candy image a class of `candy-img` for styling and animation.
