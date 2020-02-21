@@ -2,7 +2,7 @@
 Happy Halloween! Let's make an app where we can visit houses for free treats!
 
 # Setup
-In your terminal, run `open index.html` from the `halloween-treats-lab` directory.
+In the `halloween-treats-lab` directory, run `open index.html` in your terminal.
 
 **This lab comes with its own backend Rails API.** Change directory into `halloween-treats-backend` and run the following code:
 ```
@@ -13,9 +13,7 @@ rails s
 ```
 
 # Models
-There is a `House` model and a `Candy` model.
-A house has many candies.
-A candy belongs to a house.
+There is a `House` model and a `Candy` model. A house has many candies. A candy belongs to a house.
 
 # Deliverables
 ## Read (Index)
@@ -24,7 +22,7 @@ A candy belongs to a house.
   - Fetch from `"http://localhost:3000/houses"`, which will return an array of objects.
   - Render the image of each house into the `#right-column` div.
     - Each house object has the following example data:
-      ```json
+      ```
       {
         "house_img": "https://cdn0.iconfinder.com/data/icons/free-any-house/96/huge_front_view_house_with_windows-home-256.png",
         "owner_img": "https://cdn3.iconfinder.com/data/icons/materia-flat-halloween-free/24/039_017_mummy_halloween_bandages_deceased-512.png",
@@ -32,9 +30,9 @@ A candy belongs to a house.
         "candies": [{...}, {...}, {...}]
       }
       ```
-      **NOTE: The `candies` key leads to an array of candy instances which the house owns.**
+      **NOTE: The `candies` key leads to an array of candy instances which the house owns.** Consider logging it in the console to view them.
   - BONUS CSS:
-    - Wrap a div around all the house images, git it a class of `street` to add a fade-in effect to the houses on page load.
+    - Wrap a div around all the house images and give it a class of `street` to add a fade-in effect to the houses on page load.
     - Give each house image a class of `hoverable` to add hover animation to it.
 
 ## Read (Show)
