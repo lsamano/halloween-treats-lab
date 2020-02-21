@@ -45,6 +45,7 @@ const showHouse = house => {
 
   const candyButton = document.createElement('button')
   candyButton.innerHTML = "Ask for Candy"
+  candyButton.id = "candy-button"
   candyButton.addEventListener('click', () => receiveCandy(house))
   if (house.candies.length === 0 ) {
     candyButton.disabled = true
@@ -63,7 +64,12 @@ const receiveCandy = house => {
     }
   })
     .then(res => res.json())
-    .then(() => updateDom(house.candies.length - 1, candyDeleted.image_url))
+    .then(() => {
+      updateDom(house.candies.length - 1, candyDeleted.image_url)
+      // if (house.candies.length === 0 ) {
+        document.querySelector("#candy-button").disabled = true
+      // }
+    })
 }
 
 const updateDom = (newAmount, imageUrl) => {

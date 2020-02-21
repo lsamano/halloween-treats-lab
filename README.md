@@ -18,7 +18,7 @@ A house has many candies.
 A candy belongs to a house.
 
 # Deliverables
-![](index-example.gif)
+![Example of showing all houses](index-example.gif)
 ## Read (Index)
 1. On page load, images of the houses should appear in the `#right-column` div.
   - Fetch from `"http://localhost:3000/houses"`, which will return an array of objects.
@@ -37,7 +37,7 @@ A candy belongs to a house.
     - Wrap a div around all the house images, git it a class of `street` to add a fade-in effect to the houses on page load.
     - Give each house image a class of `hoverable` to add hover animation to it.
 
-![](show-example.gif)
+![Example of showing a house](show-example.gif)
 ## Read (Show)
 2. When I click on a house image, the house's show page should appear in the `#right-column` div, **replacing** all the houses.
 3. The house show page should include the following:
@@ -53,6 +53,7 @@ A candy belongs to a house.
     - A button to ask for candy
       - BONUS: If there is no more candy left, disable the button
 
+![Example of Deleting a Candy](delete-example.gif)
 ## Delete
 5. Clicking on the "ask for candy" button will DELETE one of the candy instances associated with the house from your database.
   - On click, send a DELETE request to `http://localhost:3000/candies/:id`, where `:id` is the id of a candy to be deleted. (Hint: Where did we have access to the ids of our candies? How do we get that info?)
