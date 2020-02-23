@@ -13,9 +13,8 @@ rails s
 ```
 
 # Models
-There is a `House` model and a `Candy` model.
-A house has many candies.
-A candy belongs to a house.
+There is a `House` model and a `Candy` model. A house has many candies. A candy belongs to a house.
+House -< Candy
 
 # Deliverables
 ## Read (Index)
